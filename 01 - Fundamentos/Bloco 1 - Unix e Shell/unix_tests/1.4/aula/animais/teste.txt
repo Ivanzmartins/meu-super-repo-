@@ -1,0 +1,3 @@
+  845  history | tail -n 3
+  846  history | tail -n 3 | cat >> teste.txt 
+  847  history | tail -n 3 | cat > teste.txt 

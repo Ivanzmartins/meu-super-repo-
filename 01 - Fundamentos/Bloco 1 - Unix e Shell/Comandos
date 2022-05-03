@@ -1,0 +1,41 @@
+ls				lista arquivos e diretórios
+ls -a				lista todos os arquivos e diretórios
+mkdir				cria um diretório
+cd nome			muda para o diretório "nome"
+cd				muda para o diretório inicial
+cd ~				muda para o diretório inicial
+cd ..				muda par ao diretório pai
+pwd				mostra o caminho do diretório atual
+cp arquivo1 arquivo2		copia arqvuio1 e o chama de arquivo2
+mv arquivo1 arquivo2		move ou renomeia arquivo1 para arquivo2
+rm arquivo			remove arquivo
+rmdir diretório		remove diretório
+cat arquivo			exibe arquivo
+less arquivo			exibe arquivo, uma página por vez
+head arquivo			exibe as primeiras linhas de um arquivo
+tail arquivo			exibe as ultumas linhas de um arquivo
+grep 'palavras-chave' arquivo	procura por palavras-chave no arquivo
+wc arquivo			conta o número de linhas/palavras caracteres
+*				corresponde a qualquer numero de caracteres
+?				corresponde a um caracter
+man comando			lê a página do manual online do comando informado
+whatis comando			breve descrição do comando informado
+apropos 'palavra-chave'	corresponde a comandos com palavras-chave em suas paginas de manual	
+comando > arquivo		redireciona a saída padrao para o arquivo
+comando >> arquivo		adiciona informação no arquivo	
+comando < arquivo		redireciona a entrada padrão de um arquivo (mostra as informações no terminal de acordo com o comando mas não modifica o arquivo)
+comando1 | comando2		canaliza a saída do comando1 para a entrada do comando2
+cat arquivo1 arquivo2 > arquivo0 concatena arquivo1 e arquivo2 em arquivo0
+sort				ordena dados
+who				lista os usuarios atualmente logados
+ls -lag			lista direitos de acesso para todos os arquivos
+chmod[options]arquivo		altera os direitos de acesso para o arquivo nomeado
+comando &			executa o comando em segundo plano
+^C (ctrl+C)			elimina o trabalho em execução em primeiro plano
+^Z (ctrl+Z)			suspende o trabalho em execução em primeiro plano
+bg				retorna processos que estão suspensos
+jobs				lista processos suspensos e em segundo plano
+fg % 1				reinicia o primeiro processo suspenso
+kill % 1 			encerrao o primeiro processo suspenso
+ps				lista processos atuais
+kill 26152			encerra o processo de número 26152

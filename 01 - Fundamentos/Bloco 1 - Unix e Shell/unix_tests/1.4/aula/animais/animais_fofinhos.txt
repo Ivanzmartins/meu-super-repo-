@@ -1,0 +1,5 @@
+cachorro
+gato
+Panda
+Coelho
+Arara
