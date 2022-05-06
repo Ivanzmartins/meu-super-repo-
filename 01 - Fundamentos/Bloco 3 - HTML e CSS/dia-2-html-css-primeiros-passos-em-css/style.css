@@ -1,0 +1,21 @@
+h1{
+    color: orange;
+    font-size: 65px;
+  }
+  #list{
+    background-color: blue;
+  }
+  .mudacor{
+    background-color: brown;
+    font-family: sans-serif;
+  }
+  p {font-weight: 600;
+      font-size: 3em;}
+  body { font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+
+  }
+  #amarelo {color: yellow;}
+  #vermelho {color: red;}
+  #marrom {color: brown;}
