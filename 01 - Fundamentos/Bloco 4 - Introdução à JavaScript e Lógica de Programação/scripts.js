@@ -1,10 +1,15 @@
-const nota = 100;
-if (nota>=80){
-    console.log("Aprovado");
-}
-else if (nota>=60 && nota<80){
-    console.log("Lista de espera");
-}
-else{
-    console.log("Reprovado D:")
+let estado = "lista";
+
+switch(estado){
+    case "aprovado":
+        console.log("Aprovado!!!");
+        break;
+    case "reprovado":
+        console.log("Reprovado, tente mais uma vez D:");
+        break;
+    case "lista":
+        console.log("Você está na lista de espera");
+        break;
+    default:
+        console.log("Entrada inválida");
 }
