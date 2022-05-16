@@ -35,3 +35,17 @@
 
 //Exercício 4
 
+let maiorPrimo = 1;
+
+for (let i=0; i<=50; i+=1){
+    for(let j=0; j<i; j+=1){
+        if(i%j === 0){
+            break;
+        }
+        else{
+            maiorPrimo=i;
+        }
+    }
+}
+console.log(maiorPrimo)
+
