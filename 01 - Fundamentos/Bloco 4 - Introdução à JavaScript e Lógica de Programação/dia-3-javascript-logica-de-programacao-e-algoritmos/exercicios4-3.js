@@ -35,17 +35,18 @@
 
 //Exercício 4
 
-let maiorPrimo = 1;
+// let maiorPrimo = 0;
+// let primo=true;
 
-for (let i=0; i<=50; i+=1){
-    for(let j=0; j<i; j+=1){
-        if(i%j === 0){
-            break;
-        }
-        else{
-            maiorPrimo=i;
-        }
-    }
-}
-console.log(maiorPrimo)
-
+// for (let i=0; i<100; i+=1){
+// let primo=true;
+//     for(let j=2; j<i; j+=1){
+//         if(i % j === 0){
+//             primo=false;
+//         }
+//     }
+//     if(primo == true){
+//         maiorPrimo=i;
+//     }
+// }
+// console.log(maiorPrimo)
