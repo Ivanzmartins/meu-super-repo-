@@ -50,3 +50,14 @@
 //     }
 // }
 // console.log(maiorPrimo)
+
+//EXERCICIO 1 BONUS CRIE UM QUADRADO FEITO DE ASTERISCOS
+// let n=4;
+
+// for(let  i = 0; i < n; i += 1){
+//     let linha = '';
+//     for(let j = 0; j < n; j += 1){
+//         linha += '*';
+//     }
+//     console.log(linha);
+// }
