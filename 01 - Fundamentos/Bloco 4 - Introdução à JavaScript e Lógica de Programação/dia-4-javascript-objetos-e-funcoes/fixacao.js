@@ -103,11 +103,41 @@
 //   for (let index in names){
 //       console.log("Olá " + names[index])
 //   }
-let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
-  for (let index in car){
-      console.log(index, car[index])
+// let car = {
+//     model: 'A3 Sedan',
+//     manufacturer: 'Audi',
+//     year: 2020
+//   };
+//   for (let index in car){
+//       console.log(index, car[index])
+//   }
+
+
+
+
+// // Com função
+// function bomDiaTryber(nome) {
+// //   console.log('Bom dia, ' + nome);
+// }
+
+// bomDiaTryber('Pururu'); // Bom dia, Pururu
+// bomDiaTryber('Julia'); // Bom dia, Julia
+// bomDiaTryber('Marcelo'); // Bom dia, Marcelo
+
+// function soma(a,b){
+//     return a+b;
+// }
+// console.log(soma(1,2))
+
+// function comparaNumeros (c,d){
+//     if(c>d){
+//         return ('O número ' + c + ' é maior.');
+//     }
+//     return ("O número " + d + ' é maior.')
+// }
+// console.log(comparaNumeros(1000,150))
+function sum(a, b) {
+    return a + b;
   }
+  console.log(sum(1, 2));
+  
