@@ -62,14 +62,27 @@
 //     console.log(linha);
 // }
 
-//EXERCICIO 2 BONUS
+//EXERCICIO 2 BONUS crie um retangulo
+
+// let n=4, linha='';
+
+// for(let j = 0; j < n; j += 1){
+//     linha += '*';
+//     console.log(linha);
+//     }
+
+//exercicio 3 bonus crie um retangulo invertido
 
 let n=4, linha='';
 
-for(let j = 0; j < n; j += 1){
-        linha += '*';
-        console.log(linha);
+for(let i = 0; i <= n; i += 1){
+    for(let j=0; j<n-i; j+=1){//adiciona os espaços a string
+        linha+=' ';
     }
-
-    
+    for( let k=0; k<i; k+=1){//adiciona "*" a string
+        linha+='*'
+    }
+    linha +='\n';//quebra a linha da string para imprimir
+    }
+    console.log(linha);// imprime a string com as quebras de linha e estrelas
 
