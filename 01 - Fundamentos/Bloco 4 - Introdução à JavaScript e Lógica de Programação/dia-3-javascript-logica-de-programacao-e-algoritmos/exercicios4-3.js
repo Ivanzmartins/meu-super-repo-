@@ -52,7 +52,7 @@
 // console.log(maiorPrimo)
 
 //EXERCICIO 1 BONUS CRIE UM QUADRADO FEITO DE ASTERISCOS
-// let n=4;
+// let n=2;
 
 // for(let  i = 0; i < n; i += 1){
 //     let linha = '';
@@ -61,3 +61,15 @@
 //     }
 //     console.log(linha);
 // }
+
+//EXERCICIO 2 BONUS
+
+let n=4, linha='';
+
+for(let j = 0; j < n; j += 1){
+        linha += '*';
+        console.log(linha);
+    }
+
+    
+
