@@ -73,16 +73,36 @@
 
 //exercicio 3 bonus crie um retangulo invertido
 
-let n=4, linha='';
+// let n=4, linha='';
 
-for(let i = 0; i <= n; i += 1){
-    for(let j=0; j<n-i; j+=1){//adiciona os espaços a string
-        linha+=' ';
-    }
-    for( let k=0; k<i; k+=1){//adiciona "*" a string
-        linha+='*'
-    }
-    linha +='\n';//quebra a linha da string para imprimir
-    }
-    console.log(linha);// imprime a string com as quebras de linha e estrelas
+// for(let i = 0; i <= n; i += 1){
+//     for(let j=0; j<n-i; j+=1){//adiciona os espaços a string
+//         linha+=' ';
+//     }
+//     for( let k=0; k<i; k+=1){//adiciona "*" a string
+//         linha+='*'
+//     }
+//     linha +='\n';//quebra a linha da string para imprimir
+//     }
+//     console.log(linha);// imprime a string com as quebras de linha e estrelas
+
+// //Exercício 6 bonus
+// let maiorPrimo = 0;
+// let primo=true;
+// let limite=10;
+// let primeSequence=[];
+
+// for (let i=0; i<limite; i+=1){
+// let primo=true;
+//     for(let j=2; j<i; j+=1){
+//         if(i % j === 0){
+//             primo=false;
+//         }
+//     }
+//     if(primo == true && i!=0){
+//         primeSequence.push(i);
+//     }
+// }
+// console.log(primeSequence)
+
 
