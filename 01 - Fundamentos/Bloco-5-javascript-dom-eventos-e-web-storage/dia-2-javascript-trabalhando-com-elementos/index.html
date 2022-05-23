@@ -82,13 +82,14 @@
       const secaoDireita = document.createElement('section');
       secaoDireita.className = 'right-content';
       main.appendChild(secaoDireita); 
+
       //exercicio 7
       const imagem = document.createElement('img');
       imagem.src = 'https://picsum.photos/200';
       imagem.className = 'small-image';
       secaoEsquerda.appendChild(imagem);
       //exercicio 8
-      const unlistedList = document.createElement('li');
+      const unlistedList = document.createElement('ul');
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
       for ( let index = 0; index < arrayNumbers.length; index +=1){
         const elementoLI = document.createElement('li');
@@ -105,18 +106,20 @@
       //exercicio 1 // ALTERAÇÕES
        h1.className = 'title';
        //exercicio 2
+       const chamaH3 = document.getElementsByTagName('h3'); 
       for( let index = 0; index < 3; index += 1){
-        elementoH3[index].className = 'description'; 
+        chamaH3[index].className = 'description'; 
        }
       //exercicio 3
-      // const sectionLeftContent = document.querySelector('left-content') ;
-      // elementMain.removeChild(sectionLeftContent);
+      const secaoEsquerda1 = document.querySelector('.left-content');
+      
+      main.removeChild(secaoEsquerda);
       
       //exercicio 4
       secaoDireita.style.marginRight = 'auto';
       //exercicio 5
      const exercicio5 = document.getElementsByClassName('center-content')[0];
-     exercicio5.parentNode.style.backgroundcolor = 'pink';
+     exercicio5.parentNode.style.backgroundColor = 'pink';
     </script>
   </body>
 </html>
