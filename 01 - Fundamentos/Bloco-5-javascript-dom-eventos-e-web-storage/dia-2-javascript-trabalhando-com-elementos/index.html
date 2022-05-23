@@ -1,26 +1,122 @@
-<!-- arquivo index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-    <main id="paiDoPai">
-        <section id="pai">
-          <section id="primeiroFilho"></section>
-          <section id="elementoOndeVoceEsta">
-            <section id="primeiroFilhoDoFilho"></section>
-            <section id="segundoEUltimoFilhoDoFilho"></section>
-          </section>
-          Atenção!!!
-          <section id="terceiroFilho"></section>
-          <section id="quartoEUltimoFilho"></section>
-        </section>
-      </main>
-  <script src="scriptFixa.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // exercicio 1
+      const h1 = document.createElement('h1');
+      h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(h1);
+      //exercicio 2
+      const main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+      //exercicior 3
+      const secaoCentro = document.createElement('section');
+      secaoCentro.className = 'center-content';
+      secaoCentro.innerText = 'texto centro';
+      main.appendChild(secaoCentro);
+      //exercicio 4
+      const pFilhoSecaoCentro = document.createElement('p'); 
+      secaoCentro.appendChild(pFilhoSecaoCentro);
+      //exercicio 5
+      const secaoEsquerda = document.createElement('section');
+      secaoEsquerda.className = 'left-content';
+      secaoEsquerda.innerText = 'texto seção esquerda'
+      main.appendChild(secaoEsquerda);
+      //exercicio 6
+      const secaoDireita = document.createElement('section');
+      secaoDireita.className = 'right-content';
+      main.appendChild(secaoDireita); 
+      //exercicio 7
+      const imagem = document.createElement('img');
+      imagem.src = 'https://picsum.photos/200';
+      imagem.className = 'small-image';
+      secaoEsquerda.appendChild(imagem);
+      //exercicio 8
+      const unlistedList = document.createElement('li');
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for ( let index = 0; index < arrayNumbers.length; index +=1){
+        const elementoLI = document.createElement('li');
+        elementoLI.innerText  = arrayNumbers[index];
+        unlistedList.appendChild(elementoLI);
+      };
+      secaoDireita.appendChild(unlistedList); 
+      //exerCicio 9
+      for ( let index = 0; index < 3; index += 1){
+        const elementoH3 = document.createElement('h3');
+      elementoH3.innerHTML = index;
+      main.appendChild(elementoH3);
+      }
+      //exercicio 1 // ALTERAÇÕES
+       h1.className = 'title';
+       //exercicio 2
+      for( let index = 0; index < 3; index += 1){
+        elementoH3[index].className = 'description'; 
+       }
+      //exercicio 3
+      // const sectionLeftContent = document.querySelector('left-content') ;
+      // elementMain.removeChild(sectionLeftContent);
+      
+      //exercicio 4
+      secaoDireita.style.marginRight = 'auto';
+      //exercicio 5
+     const exercicio5 = document.getElementsByClassName('center-content')[0];
+     exercicio5.parentNode.style.backgroundcolor = 'pink';
+    </script>
+  </body>
 </html>
