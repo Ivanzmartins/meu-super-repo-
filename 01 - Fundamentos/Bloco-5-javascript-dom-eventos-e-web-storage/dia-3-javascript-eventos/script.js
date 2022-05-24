@@ -34,3 +34,14 @@ function createDaysOfTheWeek() {
     }
   }
   dayMonth();
+  
+function criaBotaoFeriado(buttonName){
+  let conteinerBotao = document.getElementsByClassName('buttons-container')[0];
+  let botao = document.createElement('button');
+  let idBotao = 'btn-holiday';
+  botao.id = idBotao; 
+  botao.innerHTML = buttonName; 
+  conteinerBotao.appendChild(botao)
+
+}
+criaBotaoFeriado('Feriados');  
