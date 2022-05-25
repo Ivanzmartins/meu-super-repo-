@@ -115,7 +115,12 @@ function zoomOUT(){
 }
 zoomOUT();
 
-function addTask(){
+function addTask(tarefa){
   const taskConteiner = document.querySelector('.my-tasks');
+  const taskName = document.createElement('span');
+  taskName.innerHTML = tarefa;
+  taskConteiner.appendChild(taskName)
 
 }
+
+addTask('Chorar no banho');
