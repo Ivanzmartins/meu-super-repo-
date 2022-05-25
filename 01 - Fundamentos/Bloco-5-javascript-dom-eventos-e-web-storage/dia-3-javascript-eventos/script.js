@@ -54,10 +54,10 @@ function mostraFeriados() {
 
   botaoFeriado.addEventListener('click', function(){
     for( let index = 0; index < todosFeriados.length; index += 1){
-      if(todosFeriados[index].style.backgroundColor === 'blue'){
+      if(todosFeriados[index].style.backgroundColor === 'pink'){
         todosFeriados[index].style.backgroundColor = 'rgb(238,238,238)'; 
       }else{
-        todosFeriados[index].style.backgroundColor = 'blue';
+        todosFeriados[index].style.backgroundColor = 'pink';
       }
     }
   }); 
@@ -78,14 +78,44 @@ criaBotaoSextou('Sexta Feira');
 function mostraSexta(){
   let botaoSexta = document.querySelector('#btn-friday');
   let todasSextas = document.querySelectorAll('.friday');
+  let stringSextas = [];
+  for( let index = 0; index < todasSextas.length; index += 1){
+    stringSextas[index] = todasSextas[index].innerHTML;
+  }
+  
   botaoSexta.addEventListener('click', function (){
     for( let index = 0; index < todasSextas.length; index += 1){
-      if(todasSextas[index].style.backgroundColor === 'pink'){
-        todasSextas[index].style.backgroundColor = 'rgb(238,238,238)';
+      if(todasSextas[index].innerHTML !== 'Sextou'){
+        todasSextas[index].innerHTML = 'Sextou';
       }else{
-        todasSextas[index].style.backgroundColor = 'pink';
-      }   
+        todasSextas[index].innerHTML = stringSextas[index]
+      }
     }
   })
 }
 mostraSexta();
+
+function zoomIN(){
+  let allDays = document.querySelector('#days');// a div days contém todos os dias, e element.target é o dia dentro da div days
+  allDays.addEventListener('mouseover', function (event){
+    event.target.style.fontSize = '50px';
+
+  } )
+  
+}
+zoomIN();
+
+function zoomOUT(){
+  let allDays = document.querySelector('#days');
+  allDays.addEventListener('mouseout', function (event){
+    event.target.style.fontSize = '20px';
+
+  } )
+  
+}
+zoomOUT();
+
+function addTask(){
+  const taskConteiner = document.querySelector('.my-tasks');
+
+}
