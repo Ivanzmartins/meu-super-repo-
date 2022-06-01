@@ -96,7 +96,7 @@ function mostraSexta(){
 mostraSexta();
 
 function zoomIN(){
-  let allDays = document.querySelector('#days');// a div days contém todos os dias, e element.target é o dia dentro da div days
+  const allDays = document.querySelector('#days');// a div days contém todos os dias, e element.target é o dia dentro da div days
   allDays.addEventListener('mouseover', function (event){
     event.target.style.fontSize = '50px';
 
@@ -115,12 +115,28 @@ function zoomOUT(){
 }
 zoomOUT();
 
-function addTask(tarefa){
+function addTaskItem(tarefa){
   const taskConteiner = document.querySelector('.my-tasks');
   const taskName = document.createElement('span');
   taskName.innerHTML = tarefa;
   taskConteiner.appendChild(taskName)
 
-}
+};
 
-addTask('Chorar no banho');
+addTaskItem('rir de nervoso');
+
+
+function newTaskDiv(cor){
+  const taskConteiner = document.querySelector('.my-tasks');
+  const newTask = document.createElement('div');
+  newTask.classList.add('task');
+  newTask.style.backgroundColor = cor;
+  taskConteiner.appendChild(newTask);
+
+}
+newTaskDiv('green')
+
+function setTaskClass(){
+  const selectedTask = document.querySelectorAll('.task');
+  const
+}
