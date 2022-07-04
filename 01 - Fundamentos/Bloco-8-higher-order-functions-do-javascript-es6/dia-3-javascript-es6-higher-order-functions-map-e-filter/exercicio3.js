@@ -55,19 +55,17 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'H. P. Lovecraft',
-      birthYear: 1890,jhjkjh
+      birthYear: 1890,
     },
     releaseYear: 1928,
   },
 ];
 
 // Adicione o código do exercício aqui:
-
-function nameAndAge() {
-  return books.map((book) => ({
-    age: book.releaseYear - book.author.birthYear,
-    author: book.author.name
-   })).sort((a,b) => a.age -b.age);
+function fantasyOrSciFi () {
+  return books.filter((book) => {
+   return book.genre === 'Ficção Científica' || book.genre === 'Fantasia';
+  });
 };
 
-console.log(nameAndAge())
+console.log(fantasyOrSciFi())

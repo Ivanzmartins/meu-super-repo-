@@ -61,7 +61,6 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
 const expectedResult = [
   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
   'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
@@ -70,9 +69,9 @@ const expectedResult = [
   'A Coisa - Terror - Stephen King',
   'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
 ];
-// books.name + '-'books.genre + '-' + books.author.name
+
 function formatedBookNames() {
-  return books.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`
-  )
-};
-console.log(formatedBookNames())
+  return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`)
+}
+
+console.log(formatedBookNames());
