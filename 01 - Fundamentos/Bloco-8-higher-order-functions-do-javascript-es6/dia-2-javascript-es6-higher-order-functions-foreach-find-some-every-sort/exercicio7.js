@@ -65,13 +65,7 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  let autorUnico;
-  books.every((element) => {
-    if (!autorUnico || element.author.birthYear === autorUnico) {
-      autorUnico = true;
-    }
-  })
-  return autorUnico;
+  books.every((book) => boo )
 }
 
 console.log(authorUnique(books))
