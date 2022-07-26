@@ -62,7 +62,7 @@ const books = [
 ];
 
 function fantasyOrScienceFictionAuthors() {
-  return books.map((book) => book.author.name).sort()
+  return books.filter((book) => book.genre !== 'Terror').map((semTerror) => semTerror.author.name).sort();
 };
 
 console.log(fantasyOrScienceFictionAuthors())

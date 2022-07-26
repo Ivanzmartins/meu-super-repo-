@@ -64,7 +64,7 @@ const books = [
 // Adicione o código do exercício aqui:
 function fantasyOrSciFi () {
   return books.filter((book) => {
-   return book.genre === 'Ficção Científica' || book.genre === 'Fantasia';
+   return (book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
   });
 };
 
